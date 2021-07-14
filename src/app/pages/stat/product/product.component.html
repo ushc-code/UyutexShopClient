@@ -1,0 +1,11 @@
+<div class="product">
+  <div class="product-img">
+    <img src="assets\image\Rectangle 17.png" alt="Random second slide">
+  </div>
+  <p class="product-title">{{post.product.name}}</p>
+  <p class="product-desc">Количество заказов: {{post.count}}</p>
+  <p class="product-price">Цена: {{post.product.cost}}&nbsp;р.</p>
+  <button nbButton status="danger" (click)="delete()">Удалить
+    <nb-icon icon="close-circle-outline"></nb-icon>
+  </button>
+</div>

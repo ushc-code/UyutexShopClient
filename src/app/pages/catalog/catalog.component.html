@@ -1,0 +1,12 @@
+<hr>
+<div class="container" *ngIf="isProductsLoad">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let productPost of products">
+
+      <app-product-post [post]="productPost"></app-product-post>
+    </div>
+  </div>
+</div>
+
+
+

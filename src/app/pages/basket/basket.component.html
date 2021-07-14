@@ -1,0 +1,30 @@
+<hr>
+<div class="container">
+
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="basket-layout">
+      <div class="container" *ngIf="isProductsLoad">
+        <div class="row">
+          <div class="col-md-12" *ngFor="let productPost of products">
+
+            <app-basket-post [post]="productPost"></app-basket-post>
+          </div>
+        </div>
+      </div>
+      <!--<app-basket-post></app-basket-post>
+      <app-basket-post></app-basket-post>-->
+
+      <div class="container ">
+        <div class="coll-md-4"></div>
+        <div class="coll-md-4 text-right">
+          <p>Общая сумма: {{formattedTotalPrice}}&nbsp;р.</p>
+          <button nbButton status="success" class="basket-button-submit" (click)="order()">Оформить заказ</button>
+        </div>
+        <div class="coll-md-4"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+
+</div>

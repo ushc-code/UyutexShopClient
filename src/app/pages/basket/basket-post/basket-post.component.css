@@ -1,0 +1,30 @@
+.input{
+  margin: 0 0px;
+  width: 47px;
+  height: 40px;
+  font-size: 5px;
+}
+
+.card-element{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.basket-element:hover{
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+.basket-counter{
+  width: 134px;
+}
+
+.basket-product-img{
+  height: 120px;
+  width: 120px;
+}
+.price p{
+  margin-top: 20px;
+
+  margin-left: 25px;
+  text-align: center;
+}
+
+

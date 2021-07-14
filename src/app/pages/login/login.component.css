@@ -1,0 +1,19 @@
+.login-layout{
+  width: 155%;
+
+  left: 127px;
+  top: 155px;
+  background: #FFFFFF;
+  border-radius: 14.987px;
+  padding: 30px;
+}
+
+.button-marg{
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+
+}
+.form-control-group{
+  margin-bottom: 25px;
+}

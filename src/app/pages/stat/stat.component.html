@@ -1,0 +1,28 @@
+
+<hr>
+<div class="row marg">
+  <div class="col text-right">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Сортировка</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem (click)="setSortByCount()">По количеству заказов</button>
+        <!--button ngbDropdownItem (click)="setSortByWorth()">По стоимости заказов</button-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="isProductsLoad&&isSortByWorth()">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let productPost of productsByWorth">
+      <app-product [post]="productPost"></app-product>
+    </div>
+  </div>
+</div>
+<div class="container" *ngIf="isProductsLoad&&isSortByCount()">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let productPost of productsByCount">
+      <app-by-count-product [post]="productPost"></app-by-count-product>
+    </div>
+  </div>
+</div>

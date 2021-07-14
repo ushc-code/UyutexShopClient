@@ -1,0 +1,28 @@
+<nb-layout>
+  <nb-layout-header fixed>
+
+
+    <img src="assets\image\logo.png" width="200" height="200">
+    <div class=" container ">
+      <div class="row">
+        <div class="col-md-8 text-right">
+          <p>Контактный номер:&nbsp;+79998134676</p>
+        </div>
+        <div class="col-md-4 text-right">
+          <p> Наша почта:&nbsp;uytex@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+  </nb-layout-header>
+  <nb-layout-column>
+    <nb-route-tabset [tabs]="tabs" fullWidth f>
+    </nb-route-tabset>
+
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+  <nb-layout-footer fixed>
+    Все права защищены &copy;
+  </nb-layout-footer>
+</nb-layout>
+

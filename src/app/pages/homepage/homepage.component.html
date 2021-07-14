@@ -1,0 +1,32 @@
+<hr>
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[0]" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Широкий ассортимент</h3>
+      <p>В нашем интернет-магазине каждый может найти мебель по своему вкусу и приобрести ее по низкой цене, в каталоге представлена мягкая и корпусная мебель, мебель для дома и офиса, различные предметы декора </p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+
+      <img src="assets\image\slide7.jpg" width="1700" height="500">
+    </div>
+    <div class="carousel-caption text">
+      <h3>Дизайнерская мебель</h3>
+      <p>Яркие и стильные решения для вашего интерьера, который может стать, действительно, уникальным, благодаря нашим моделям, выполненных в единственном экземпляре</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[2]" alt="Random third slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Надежность и качество</h3>
+      <p>Наш интернет - магазин работает только с проверенными поставщиками и производителями, мы предлагаем высокое качество и надежность по самым доступным ценам</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+

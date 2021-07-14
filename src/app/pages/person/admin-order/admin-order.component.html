@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-3">
+      <p>{{post.id_order}}</p>
+    </div>
+    <div class="col-md-3">
+      <p>{{post.date}}</p>
+    </div>
+    <div class="col-md-3">
+      <p>{{post.price_order}}</p>
+    </div>
+    <div class="col-md-3">
+      <p>{{post.status}}</p>
+    </div>
+    <div class="col-md-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center" >
+            <p class="new_status_p">Новый статус: </p>
+          </div>
+          <div class="col-md-3 text-center" >
+            <input nbInput class="input" (focusout)="changeStatus(stat.value)" #stat>
+          </div>
+          <div class="col-md-6 text-center" >
+            <button nbButton status="success" (click)="updateStatus()">Применить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>

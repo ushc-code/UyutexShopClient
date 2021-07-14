@@ -1,0 +1,74 @@
+<hr>
+<div class="container register-layout">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1 id="title" class="title text-center">Регистрация</h1>
+      <p class="sub-title text-center">Введите ваши данные </p>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()"
+            #form="ngForm" aria-labelledby="title">
+
+        <div class="form-control-group">
+          <label class="label" for="input-email">Введите Email:</label>
+          <input nbInput
+                 fullWidth
+                 name="email"
+                 id="input-email"
+                 pattern=".+@.+\..+"
+                 placeholder="Email"
+                 #email
+                 autofocus
+                 formControlName="email">
+        </div>
+
+        <div class="form-control-group">
+          <label class="label" for="input-password">Введите пароль:</label>
+          <input nbInput
+                 fullWidth
+                 name="password"
+                 type="password"
+                 id="input-password"
+                 placeholder="Пароль"
+                 #password
+                 formControlName="password">
+        </div>
+
+        <div class="form-control-group">
+          <label class="label" for="first-name">Имя:</label>
+          <input nbInput
+                 fullWidth
+                 id="first-name"
+                 placeholder="Ваше имя"
+                 #firstName
+                 formControlName="username"
+          >
+        </div>
+
+        <div class="form-control-group">
+          <label class="label" for="phone-num">Номер телефона:</label>
+          <input nbInput
+                 fullWidth
+                 name="phoneNum"
+                 id="phone-num"
+                 type="text"
+                 placeholder="Номер телефона"
+                 #phoneNum
+                 formControlName="phone"
+          >
+        </div>
+
+        <div class="text-center button-marg">
+        <button nbButton
+                style="width: 350px"
+                status="success">
+          Зарегестрироваться
+        </button>
+        </div>
+        <section class="another-action text-center" aria-label="Register">
+          У вас уже есть аккаунт? <a class="text-link" routerLink="../login">Войти</a>
+        </section>
+      </form>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

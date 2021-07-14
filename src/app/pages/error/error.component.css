@@ -1,0 +1,17 @@
+.err-img {
+  height: 400px;
+}
+.err-404 {
+  padding-top: 200px;
+  font-size: 150pt;
+  color: #ffffff;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #3E4A52;
+
+}
+.error {
+  text-align: center;
+  font-size: 35px;
+  color:#3E4A52;
+  margin-top: 5%;
+}

@@ -1,0 +1,12 @@
+.basket-layout{
+
+  width: 155%;
+  height: 100%;
+  left: 127px;
+  top: 155px;
+  background: #FFFFFF;
+  border-radius: 14.987px;
+}
+.basket-button-submit{
+margin-bottom: 20px;
+}

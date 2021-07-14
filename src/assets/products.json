@@ -1,0 +1,35 @@
+[
+{
+  "name": "Стол Маринс",
+  "length_model": 40,
+  "width": 50,
+  "height": 60,
+  "vendor": "Фабрика мебели",
+  "cost": 9999
+},
+
+{
+"name": "Стул Кьявари",
+"length_model": 40,
+"width": 50,
+"height": 60,
+"vendor": "Фабрика мебели",
+"cost": 5550
+},
+{
+"name": "Кровать комилла",
+"length_model": 200,
+"width": 200,
+"height": 40,
+"vendor": "Мебелен",
+"cost": 33545
+},
+{
+"name": "Шкаф-купе Лавиль",
+"length_model": 120,
+"width": 60,
+"height": 170,
+"vendor": "Фабрика мебели",
+"cost": 236999
+}
+]

@@ -1,0 +1,12 @@
+<div class="products">
+      <div class="product">
+        <div class="product-img">
+         <img src="assets\image\Rectangle 17.png" alt="Random second slide">
+        </div>
+        <p class="product-title">{{post.name}} </p>
+        <p class="product-desc">Размеры: {{post.length_model}}х{{post.height}}х{{post.width}} см <br> Поставщик: {{post.vendor}}</p>
+        <p class="product-price">Цена: {{post.cost}}р.</p>
+        <button nbButton status="warning" (click)="buy()">Купить<nb-icon icon="shopping-cart-outline"></nb-icon></button>
+      </div>
+  </div>
+

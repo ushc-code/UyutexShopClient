@@ -1,0 +1,90 @@
+<hr>
+<div class="container" *ngIf="isUserLogged">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="order-layout">
+      <div class="container ">
+        <div class="coll-md-4"></div>
+        <div class="coll-md-4">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <h6>Номер заказа</h6>
+              </div>
+              <div class="col-md-3">
+                <h6>Дата заказа</h6>
+              </div>
+              <div class="col-md-3">
+                <h6>Сумма заказа</h6>
+              </div>
+              <div class="col-md-3">
+                <h6>Статус заказа</h6>
+              </div>
+
+            </div>
+          </div>
+          <hr>
+
+          <div class="container" *ngIf="isOrdersLoad">
+            <div class="row">
+              <div class="col-md-12" *ngFor="let orderPost of orders">
+
+                <app-order [post]="orderPost"></app-order>
+              </div>
+            </div>
+          </div>
+          <!--<app-order></app-order>
+          <app-order></app-order>
+          <app-order></app-order>-->
+        </div>
+        <div class="coll-md-4"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+
+</div>
+
+<div class="container" *ngIf="isAminLogged">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="order-layout">
+      <div class="container ">
+        <div class="coll-md-4"></div>
+        <div class="coll-md-4">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <h6>Номер заказа</h6>
+              </div>
+              <div class="col-md-3">
+                <h6>Дата заказа</h6>
+              </div>
+              <div class="col-md-3">
+                <h6>Сумма заказа</h6>
+              </div>
+              <div class="col-md-3">
+                <h6>Статус заказа</h6>
+              </div>
+
+            </div>
+          </div>
+          <hr>
+
+          <div class="container" *ngIf="isOrdersLoad">
+            <div class="row">
+              <div class="col-md-12" *ngFor="let orderPost of orders">
+
+                <app-admin-order [post]="orderPost"></app-admin-order>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coll-md-4"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+
+</div>
+

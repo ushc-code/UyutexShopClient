@@ -1,0 +1,52 @@
+<hr>
+<div class="container login-layout">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+
+            <h1 id="title" class="title text-center">Вход</h1>
+            <p class="sub-title text-center">Введите email и пароль, для того чтобы войти</p>
+
+            <form #form="ngForm" aria-labelledby="title" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+              <div class="form-control-group">
+                <label class="label" style="margin-right: 450px" for="input-email">Введите&nbsp;Email:</label>
+                <input nbInput
+                       fullWidth
+                       #email
+                       name="email"
+                       id="input-email"
+                       pattern=".+@.+\..+"
+                       placeholder="Email"
+                       autofocus
+                       formControlName="email">
+              </div>
+
+              <div class="form-control-group">
+                <label class="label" style="margin-right: 432px" for="input-password">Введите&nbsp;пароль:</label>
+                <input nbInput
+                       fullWidth
+                       #password
+                       name="password"
+                       type="password"
+                       id="input-password"
+                       placeholder="Пароль"
+                       formControlName="password">
+              </div>
+
+              <div class="text-center button-marg">
+              <button nbButton style="width: 250px"
+
+                      status="success"  >
+                Войти
+              </button>
+              </div>
+            </form>
+
+            <section class="another-action text-center" aria-label="Register">
+              У вас еще нет аккаунта? <a class="text-link" routerLink="../register">Зарегистрируйтесь</a>
+            </section>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>

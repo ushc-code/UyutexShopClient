@@ -1,0 +1,43 @@
+<div class="container" *ngIf="isShow">
+  <div class="row basket-element">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-10">
+      <div class="container">
+        <div class="row card-element">
+          <div class="col-md-3 text-center">
+
+              <p>{{post.name}}</p>
+              <img src="assets\image\Rectangle 17.png" alt="Изображение товара" class="basket-product-img">
+
+          </div>
+          <div class="col-md-7 text-center">
+            <div class="text-width">
+            <p>Описаниe товара</p>
+            <p>Размеры: {{post.length_model}}х{{post.height}}х{{post.width}}см <br> Поставщик: {{post.vendor}}</p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="basket-counter">
+              <button nbButton status="basic" (click)="decrement()" (focusout)="send()">
+                <nb-icon icon="minus-outline"></nb-icon>
+              </button>
+              <input nbInput class="input"  (focusout)="send()" [value]="totalCount" style="font-size: 12px">
+              <button nbButton status="basic" (click)="increment()" (focusout)="send()">
+                <nb-icon icon="plus-outline"></nb-icon>
+              </button>
+            </div>
+            <div class="price">
+              <p>{{post.cost}}</p>
+            </div>
+            <button nbButton status="danger" class="delete" (click)="delete()">Удалить
+              <nb-icon icon="close-circle-outline"></nb-icon>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
